@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Joker from './components/JokerContainer';
-
-import './stylesheets/main.scss';
+import Joker from "./Joker";
 
 interface IProps {
   
 }
+const app = "sth";
 interface IState {
 
 }
