@@ -1,9 +1,9 @@
 import React from 'react';
-import ModesContext from '../../contexts/joker-properties-context';
+import MoodsContext from '../../../../contexts/joker-properties-context';
 
 class Nose extends React.Component{
 
-  static contextType = ModesContext;
+  static contextType = MoodsContext;
 
   render(){
     return(

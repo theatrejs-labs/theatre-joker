@@ -4,7 +4,7 @@ import Joker from './Joker';
 
 import Theatre from 'theatre';
 
-import { Provider } from './contexts/joker-properties-context';
+import { Provider } from '../../contexts/joker-properties-context';
 
 interface IProps {
   
@@ -54,11 +54,11 @@ class App extends React.Component<IProps, IState> {
   componentDidMount(){
     const project = Theatre.getProject('Joker');
 
-    // Modes Timeline
+    // Timeline
 
-    const modesTimeline = project.getTimeline('Joker Modes');
-    const modesObject = modesTimeline.getObject(
-      "Joker",
+    const timeline = project.getTimeline('Joker');
+    const moodsObject = timeline.getObject(
+      "Joker Moods",
       Joker,
       {
         props: {
@@ -77,7 +77,7 @@ class App extends React.Component<IProps, IState> {
         }
       }
     );
-    modesObject.onValuesChange(({ sadness, happiness, anxiousness, surpriseness })=>{
+    moodsObject.onValuesChange(({ sadness, happiness, anxiousness, surpriseness })=>{
       this.setState({
         sadness,
         happiness,
@@ -86,11 +86,8 @@ class App extends React.Component<IProps, IState> {
       })
     });
 
-    // Movement Timeline
-
-    const movementTimeline = project.getTimeline('Joker Movements');
-    const movementObject = movementTimeline.getObject(
-      "Joker",
+    const movementObject = timeline.getObject(
+      "Joker Movements",
       Joker,
       {
         props: {
@@ -108,7 +105,7 @@ class App extends React.Component<IProps, IState> {
         top,
         left,
       })
-    })
+    });
   }
 }
 

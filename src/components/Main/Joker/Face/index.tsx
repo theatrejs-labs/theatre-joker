@@ -5,6 +5,7 @@ import LeftEye from './LeftEye';
 import RightEye from './RightEye';
 import Lip from './Lip';
 import Nose from './Nose';
+import ForeHead from './ForeHead';
 
 class Face extends React.Component{
 
@@ -43,6 +44,7 @@ class Face extends React.Component{
             <Nose />
             <Chorok />
             <Lip />
+            <ForeHead />
           </g>
         </g>
       </React.Fragment>

@@ -1,9 +1,9 @@
 import React from 'react';
-import ModesContext from '../../contexts/joker-properties-context';
+import MoodsContext from '../../../../contexts/joker-properties-context';
 
 class RightEye extends React.Component{
 
-  static contextType = ModesContext;
+  static contextType = MoodsContext;
 
   render(){
     return (
@@ -29,46 +29,48 @@ class RightEye extends React.Component{
               d="M260.321,188.643c0,0 -11.011,-7.963 -30.031,-6.967c-19.019,0.995 -34.285,10.202 -33.284,13.686c1.001,3.484 4.004,1.742 8.259,3.235c4.254,1.493 16.016,8.709 28.278,6.718c12.263,-1.99 26.027,-8.46 26.778,-16.672Z" />
           </clipPath>
           <g clipPath="url(#_clip4)">
-            <ellipse
-              id="EyeBall"
-              cx="230.938"
-              cy="186.64"
-              rx="14.684"
-              ry="14.601"
-              style=
-                {
-                  {
-                    fill:"#272727",
-                  }
-                }
-              />
-            <clipPath id="_clip5">
+            <g style={{ transform: `translateX(${this.context.happiness}px)` }}>
               <ellipse
+                id="EyeBall"
                 cx="230.938"
                 cy="186.64"
                 rx="14.684"
                 ry="14.601"
-              />
-            </clipPath>
-            <g clipPath="url(#_clip5)">
-              <ellipse
-                cx="230.938"
-                cy="186.64"
-                rx="8.79"
-                ry="8.74"
-              />
-              <ellipse
-                cx="222.513"
-                cy="186.563"
-                rx="2.076"
-                ry="2.064"
                 style=
                   {
                     {
-                      fill:"#fff",
+                      fill:"#272727",
                     }
                   }
                 />
+              <clipPath id="_clip5">
+                <ellipse
+                  cx="230.938"
+                  cy="186.64"
+                  rx="14.684"
+                  ry="14.601"
+                />
+              </clipPath>
+              <g clipPath="url(#_clip5)">
+                <ellipse
+                  cx="230.938"
+                  cy="186.64"
+                  rx="8.79"
+                  ry="8.74"
+                />
+                <ellipse
+                  cx="222.513"
+                  cy="186.563"
+                  rx="2.076"
+                  ry="2.064"
+                  style=
+                    {
+                      {
+                        fill:"#fff",
+                      }
+                    }
+                  />
+              </g>
             </g>
           </g>
         </g>

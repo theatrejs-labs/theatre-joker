@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainContainer from './components/MainContainer';
+import Main from './components/Main';
 
 import './stylesheets/main.scss';
 
@@ -15,7 +15,7 @@ class App extends React.Component<IProps, IState> {
 
   render() {
     return (
-      <MainContainer />
+      <Main />
     );
   }
 }

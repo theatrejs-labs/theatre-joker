@@ -1,0 +1,12 @@
+@import '../../stylesheets/abstracts/index.scss';
+
+.main{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+
+  padding: $global-padding;
+}

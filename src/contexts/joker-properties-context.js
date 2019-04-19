@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ModesContext = React.createContext({
+const MoodsContext = React.createContext({
   sadness: 0,
   happiness: 0,
   anxiousness: 0,
@@ -9,12 +9,12 @@ const ModesContext = React.createContext({
   top: 0,
 });
 
-const { Provider, Consumer } = ModesContext;
+const { Provider, Consumer } = MoodsContext;
 
 export {
   Provider,
   Consumer,
-  ModesContext,
+  MoodsContext,
 };
 
-export default ModesContext;
+export default MoodsContext;
