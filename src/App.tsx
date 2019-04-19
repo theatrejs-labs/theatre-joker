@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Joker from './components/JokerContainer';
+import MainContainer from './components/MainContainer';
 
 import './stylesheets/main.scss';
 
@@ -15,7 +15,7 @@ class App extends React.Component<IProps, IState> {
 
   render() {
     return (
-      <Joker />
+      <MainContainer />
     );
   }
 }

@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 
+import Face from './Face';
+
 class App extends Component {
   render() {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
-        
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 319 440"
+        version="1.1"
+        style={
+          {
+            fillRule:"evenodd",
+            clipRule:"evenodd",
+            strokeLinejoin:"round",
+            strokeMiterlimit:1.41421,
+          }
+        }
+      >
+        <Face />
       </svg>
     );
   }
