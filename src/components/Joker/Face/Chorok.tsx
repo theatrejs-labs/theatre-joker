@@ -1,6 +1,9 @@
 import React from 'react';
+import ModesContext from '../../contexts/joker-properties-context';
 
 class Chorok extends React.Component{
+
+  static contextType = ModesContext;
 
   render(){
     return (

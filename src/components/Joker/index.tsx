@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 
 import Face from './Face';
 
-class App extends Component {
+interface IProps{
+  
+};
+
+interface IState{
+
+};
+
+class App extends Component<IProps, IState> {
   render() {
     return (
       <svg
