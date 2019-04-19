@@ -14,7 +14,6 @@ const { Provider, Consumer } = MoodsContext;
 export {
   Provider,
   Consumer,
-  MoodsContext,
 };
 
 export default MoodsContext;
