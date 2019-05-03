@@ -2,7 +2,7 @@ import React from 'react';
 
 import Joker from './Joker';
 
-import Theatre from 'theatre';
+declare let Theatre: any;
 
 import { Provider } from '../../contexts/joker-properties-context';
 
@@ -83,7 +83,7 @@ class App extends React.Component<IProps, IState> {
         }
       }
     );
-    moodsObject.onValuesChange(({ eyeX, eyeY, smile, mouthX, mouthY })=>{
+    moodsObject.onValuesChange(({ eyeX, eyeY, smile, mouthX, mouthY }: any)=>{
       this.setState({
         eyeX,
         eyeY,
@@ -107,7 +107,7 @@ class App extends React.Component<IProps, IState> {
         }
       }
     );
-    movementObject.onValuesChange(({ top, left })=>{
+    movementObject.onValuesChange(({ top, left }: any)=>{
       this.setState({
         top,
         left,
