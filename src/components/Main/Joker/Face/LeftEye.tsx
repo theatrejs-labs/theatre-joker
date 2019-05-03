@@ -28,7 +28,7 @@ class LeftEye extends React.Component{
               d="M67.471,191.365c0,0 10.948,-7.963 29.86,-6.968c18.912,0.996 34.091,10.203 33.096,13.687c-0.996,3.483 -3.982,1.741 -8.212,3.234c-4.23,1.493 -15.926,8.71 -28.119,6.719c-12.193,-1.991 -25.879,-8.46 -26.625,-16.672Z" />
           </clipPath>
           <g clipPath="url(#_clip7)">
-            <g style={{ transform: `translateX(${this.context.happiness}px)` }}>
+            <g style={{ transform: `translateX(${this.context.eyeX}px) translateY(${this.context.eyeY}px)` }}>
               <circle
                 id="EyeBall1"
                 cx="96.687"

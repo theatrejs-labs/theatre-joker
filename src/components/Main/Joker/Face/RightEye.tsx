@@ -29,7 +29,7 @@ class RightEye extends React.Component{
               d="M260.321,188.643c0,0 -11.011,-7.963 -30.031,-6.967c-19.019,0.995 -34.285,10.202 -33.284,13.686c1.001,3.484 4.004,1.742 8.259,3.235c4.254,1.493 16.016,8.709 28.278,6.718c12.263,-1.99 26.027,-8.46 26.778,-16.672Z" />
           </clipPath>
           <g clipPath="url(#_clip4)">
-            <g style={{ transform: `translateX(${this.context.happiness}px)` }}>
+            <g style={{ transform: `translateX(${this.context.eyeX}px) translateY(${this.context.eyeY}px)` }}>
               <ellipse
                 id="EyeBall"
                 cx="230.938"

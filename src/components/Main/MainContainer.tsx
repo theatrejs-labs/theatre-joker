@@ -10,10 +10,11 @@ interface IProps {
   
 }
 interface IState {
-  sadness: number,
-  happiness: number,
-  anxiousness: number,
-  surpriseness: number,
+  eyeY: number,
+  eyeX: number,
+  smile: number,
+  mouthY: number,
+  mouthX: number,
   top: number,
   left: number,
 }
@@ -21,26 +22,28 @@ interface IState {
 class App extends React.Component<IProps, IState> {
 
   state = {
-    sadness: 0,
-    happiness: 0,
-    anxiousness: 0,
-    surpriseness: 0,
+    eyeX: 0,
+    eyeY: 0,
+    mouthX: 0,
+    mouthY: 0,
+    smile: 0,
     top: 0,
     left: 0,
   }
 
   render() {
 
-    const { sadness, happiness, anxiousness, surpriseness, left, top } = this.state;
+    const { eyeX, eyeY, smile, mouthX, mouthY, left, top } = this.state;
 
     return (
       <Provider
         value={
           {
-            sadness,
-            happiness,
-            anxiousness,
-            surpriseness,
+            eyeX,
+            eyeY,
+            smile,
+            mouthX,
+            mouthY,
             left,
             top,
           }
@@ -62,27 +65,31 @@ class App extends React.Component<IProps, IState> {
       Joker,
       {
         props: {
-          sadness: {
+          eyeX: {
             type: "number",
           },
-          happiness: {
+          eyeY: {
             type: "number",
           },
-          anxiousness: {
+          mouthX: {
             type: 'number',
           },
-          surpriseness: {
+          mouthY: {
+            type: 'number',
+          },
+          smile: {
             type: 'number',
           },
         }
       }
     );
-    moodsObject.onValuesChange(({ sadness, happiness, anxiousness, surpriseness })=>{
+    moodsObject.onValuesChange(({ eyeX, eyeY, smile, mouthX, mouthY })=>{
       this.setState({
-        sadness,
-        happiness,
-        anxiousness,
-        surpriseness,
+        eyeX,
+        eyeY,
+        smile,
+        mouthX,
+        mouthY,
       })
     });
 

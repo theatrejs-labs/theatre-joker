@@ -1,10 +1,11 @@
 import React from 'react';
 
 const MoodsContext = React.createContext({
-  sadness: 0,
-  happiness: 0,
-  anxiousness: 0,
-  surpriseness: 0,
+  eyeX: 0,
+  eyeY: 0,
+  smile: 0,
+  mouthX: 0,
+  mouthY: 0,
   left: 0,
   top: 0,
 });
