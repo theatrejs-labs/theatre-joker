@@ -1,0 +1,27 @@
+.handlers {
+    &__main {
+        fill: #00a1ffc7;
+        transition-duration: 0.2s;
+        r: 3;
+        cursor: pointer;
+
+        &:hover {
+            fill: #00a1ffff;
+            r: 5;
+        }
+    }
+    &__handle-line {
+        stroke: #000000cc;
+    }
+    &__handle-point {
+        fill: #fffb00c7;
+        transition-duration: 0.2s;
+        r: 2;
+        cursor: pointer;
+
+        &:hover {
+            fill: #fffb00ff;
+            r: 4;
+        }
+    }
+}
